@@ -1,17 +1,18 @@
 /* Global rules */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
 
 html {
-    background-color: lightgray;
-    font-family: 'Quicksand', sans-serif;
+    background-color: rgba(255, 155, 112, 0.329);
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
 }
 
 ::selection {
     color: #000; 
-    background: #ff0;
+    background: rgb(255, 124, 112);
 }
 
 h1 {
@@ -21,10 +22,27 @@ h1 {
     line-height: 2.5em;
 }
 
-main.wrapper {
+h1.page-header{
+    font-family: 'Open Sans',sans-serif;
+    color: rgb(0, 87, 99);
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+ }
+ 
+
+ main.wrapper {
     background-color: white;
     overflow: auto;
-}
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+ }
+ 
 
 p {
     margin: 1em; /* Top Right Bottom Left (TRBL) */
@@ -34,16 +52,17 @@ h2,h3 {
     font-weight: normal;
     margin-left: 1em;
     line-height: 1em;
+    color:  rgb(0, 87, 99);
 }
 
 a {
-    color:darkcyan;
+    color:rgb(1, 71, 90);
     text-decoration: none;
 }
 
 a:hover {
     color: whitesmoke;
-    background-color: darkcyan;
+    background-color: rgb(0, 87, 99);
     text-decoration: none;
 }
 
@@ -65,12 +84,18 @@ footer {
     h1 {
         width: 79%;
         padding-left: 1%;
+        
     }
     
     picture.profile img {
         width: 50%;
         float: left;
         margin-right: 2em;
+        border-radius: 5px;
+        margin-top: 1%;
+        margin-left:1%;
+        
+        
     }
     
 }
@@ -108,6 +133,7 @@ footer {
     
     picture.profile img {
         width: 100%;
+        
     }
     
 }
