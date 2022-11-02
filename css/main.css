@@ -116,6 +116,9 @@ footer {
         width: 50%;
         float: right;
         margin-left: 1em;
+        margin-right: 1em;
+        border-radius: 5px;
+        margin-top: 2%;
     }
 
 }
@@ -132,7 +135,11 @@ footer {
     }
     
     picture.profile img {
-        width: 100%;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 1%;
+        border-radius: 5px;
+        margin-top: 2.5%;
         
     }
     
