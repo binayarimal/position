@@ -55,6 +55,7 @@ h2,h3 {
     color:  rgb(0, 87, 99);
 }
 
+
 a {
     color:rgb(1, 71, 90);
     text-decoration: none;
@@ -71,6 +72,100 @@ footer {
     text-align: center;
     padding: 1em;
 }
+
+/* start positioning styles */ 
+
+.text-align-center{
+    text-align:center;
+    background-color:aqua;
+ }
+
+ /* Allows box to take up full space, ignoring padding/margin */
+* {
+    box-sizing: border-box;
+  }
+  
+ /* Create two equal columns that floats next to each other */
+ .my-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    min-height: 300px; /* Can be removed. Only for demonstration */
+  }
+ /* Clear floats after the columns */
+  .my-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 
+  
+ .margin-auto > div{
+    margin:auto;
+    width:50%;
+    background-color:beige;
+    text-align:center;
+ }
+
+ .fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+   .fa:hover {
+      opacity: 0.7;
+  }
+   .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+   .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+   .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+   .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+   .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+ 
+   
+ .social-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+ .fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 20px 25px;
+ }
+ 
+ * flexible image rules start here */
+ 
+.flexible img{
+   width:100%;
+}
+ 
+.flexible{
+   display: flex;
+   justify-content: space-evenly;
+}
+ 
+/* flexible image rules end here */
+
+ /* start positioning styles */ 
 
 /* Responsive rules */
 
@@ -139,8 +234,11 @@ footer {
         margin-left: 2.5%;
         margin-right: 1%;
         border-radius: 5px;
-        margin-top: 2.5%;
-        
+        margin-top: 2.5%;   
     }
-    
+    /* changes width of column in mobile */
+    .my-column {
+        width: 100%;
+      }
+ 
 }
